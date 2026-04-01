@@ -29,14 +29,18 @@ Designed to help small restaurants establish an online presence and increase cus
 
 ## 📸 Preview
 
-![Website Screenshot](screenshot.png)  
-*(Add a screenshot of your live site here – take one and upload it to the repo with this name)*
+![landing](https://github.com/user-attachments/assets/90dd6ae1-2abd-4884-ae83-7bc798bcc085)
+![menu](https://github.com/user-attachments/assets/19a780e7-d381-4941-89e9-95d97fe4dbea)
+![visit us](https://github.com/user-attachments/assets/dbf76a7e-9bb1-48a2-a6c1-b25f5cba30d6)
+![contact us](https://github.com/user-attachments/assets/e8207d54-a96d-47c9-ace1-43e9aadab132)
+
+
 
 ---
 
 ## 🌐 Live Demo
 
-👉 [https://happy-devloper.github.io/bistro-46-demo/](bistro-46.netlify.app)
+👉 [https://bistro-46.netlify.app/](https://bistro-46.netlify.app/)
 
 ---
 
