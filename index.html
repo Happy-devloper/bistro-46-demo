@@ -2,64 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="title">Restaurant</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Bistro 46 | Mediterranean Cuisine in NYC</title>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-  <nav class="container">
-    <div class="logo" id="logo">Restaurant</div>
-
-    <ul id="navLinks">
-      <li><a href="#menu">Menu</a></li>
-      <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <div id="mobileMenu">☰</div>
-  </nav>
+  <div class="container">
+    <nav>
+      <div class="logo">Bistro <span>46</span></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="mobile-menu" id="mobileMenu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </div>
 </header>
 
-<section class="hero">
-  <div class="hero-content">
-    <h1 id="hero-title">Restaurant Name</h1>
-    <p>Order your favorite food online or call for quick pickup.</p>
-
-    <div class="hero-buttons">
-      <a href="#menu" class="btn">View Menu</a>
-      <a id="callBtn" class="btn secondary">📞 Call Now</a>
+<main>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Bistro 46</h1>
+      <p>Mediterranean flavors in the heart of New York City. Fresh ingredients, vibrant atmosphere, and unforgettable dining.</p>
+      <a href="#menu" class="btn">Explore Menu</a>
     </div>
+  </section>
+
+  <section id="menu">
+    <div class="container">
+      <h2 class="section-title">Our Menu</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Grilled Octopus">
+          <div class="menu-item-content">
+            <h3>Grilled Octopus</h3>
+            <p>Char-grilled octopus, lemon, olive oil, oregano, served with roasted potatoes.</p>
+            <div class="price">$24</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1516100882582-96c3a05fe590?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Lamb Chops">
+          <div class="menu-item-content">
+            <h3>Lamb Chops</h3>
+            <p>Herb-marinated lamb chops, served with tzatziki and grilled vegetables.</p>
+            <div class="price">$32</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Moussaka">
+          <div class="menu-item-content">
+            <h3>Moussaka</h3>
+            <p>Layers of eggplant, spiced meat, béchamel sauce. A classic.</p>
+            <div class="price">$21</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Greek Salad">
+          <div class="menu-item-content">
+            <h3>Greek Salad</h3>
+            <p>Tomatoes, cucumber, red onion, feta, olives, oregano, extra virgin olive oil.</p>
+            <div class="price">$14</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Visit Us</h2>
+      <div class="contact-grid">
+        <div class="info-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Location</h3>
+          <p>46 Market Street, New York, NY 10002</p>
+          <i class="fas fa-phone-alt" style="margin-top: 1rem; display: inline-block;"></i>
+          <h3>Call Us</h3>
+          <p>(646) 590-0612</p>
+          <i class="fas fa-clock"></i>
+          <h3>Hours</h3>
+          <ul class="hours-list">
+            <li><span>Mon - Tue</span><span>Closed</span></li>
+            <li><span>Wed - Thu</span><span>5:00 PM – 12:00 AM</span></li>
+            <li><span>Fri - Sat</span><span>5:00 PM – 2:00 AM</span></li>
+            <li><span>Sun</span><span>Closed</span></li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-envelope"></i>
+          <h3>Send a Message</h3>
+          <form class="contact-form" id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea rows="4" placeholder="Reservation request or question..."></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+          <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">For reservations, call us or use this form.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Bistro 46. All rights reserved. | Designed for NYC flavor</p>
   </div>
-</section>
-
-<section id="menu" class="container">
-  <h2>Menu</h2>
-  <div class="menu-grid" id="menuItems"></div>
-</section>
-
-<section id="reviews" class="container">
-  <h2>What Customers Say</h2>
-  <div class="reviews">
-    <div>⭐⭐⭐⭐⭐ Amazing food and atmosphere!</div>
-    <div>⭐⭐⭐⭐⭐ Loved the service!</div>
-    <div>⭐⭐⭐⭐⭐ Highly recommended!</div>
-  </div>
-</section>
-
-<section id="contact" class="container">
-  <h2>Visit Us</h2>
-
-  <p id="address"></p>
-  <p><a id="phone"></a></p>
-
-  <iframe id="map"></iframe>
-</section>
-
-<a id="stickyCall" class="sticky-call">📞 Call Now</a>
+</footer>
 
 <script src="script.js"></script>
 </body>
