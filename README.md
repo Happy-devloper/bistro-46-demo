@@ -8,12 +8,12 @@ Designed to help small restaurants establish an online presence and increase cus
 ## 🚀 Features
 
 - 📱 Fully responsive (mobile-friendly)
-- 🍔 Menu section with images
-- 📞 Click-to-call functionality
+- 🍔 Menu section with images and descriptions
+- 📞 Click‑to‑call buttons (hero section & sticky button)
 - 📍 Google Maps integration
 - ⭐ Customer reviews section
 - ⚡ Fast loading & lightweight
-- 🔧 Easy customization (edit one JS file)
+- 🔧 Easy customization – edit only one JavaScript file
 
 ---
 
@@ -21,48 +21,44 @@ Designed to help small restaurants establish an online presence and increase cus
 
 - HTML5  
 - CSS3  
-- JavaScript (Vanilla JS)
+- JavaScript (Vanilla JS)  
+- Font Awesome Icons  
+- Google Fonts (Playfair Display & Open Sans)
 
 ---
 
 ## 📸 Preview
 
-(Add screenshot here later)
+![Website Screenshot](screenshot.png)  
+*(Add a screenshot of your live site here – take one and upload it to the repo with this name)*
 
 ---
 
 ## 🌐 Live Demo
 
-👉 https://happy-devloper.github.io/bistro-46-demo/
+👉 [https://happy-devloper.github.io/bistro-46-demo/](bistro-46.netlify.app)
 
 ---
 
 ## ⚙️ How to Customize
 
-You only need to edit the `data` object in `script.js`:
+All content is driven by the `data` object in `script.js`.  
+To create your own restaurant website, simply edit this object:
 
 ```js
 const data = {
   name: "Restaurant Name",
   phone: "+1234567890",
   address: "Your Address",
-  map: "Google Maps Embed लिंक",
+  map: "https://www.google.com/maps/embed?pb=...", // Google Maps embed URL
 
   menu: [
     {
       name: "Dish Name",
       price: "$10",
-      img: "image-url"
-    }
+      img: "https://example.com/image.jpg",
+      desc: "Short description of the dish"
+    },
+    // Add more menu items here
   ]
 };
-
----
-
-## 📞 Interested in a Website for Your Restaurant?
-
-I build custom, affordable websites for small businesses – especially restaurants.  
-If you like this demo and want a site for your own restaurant, **contact me**:
-
-- Email: your-happydevlopment@gmail.com  
-- GitHub: [Happy-devloper](https://github.com/Happy-devloper)  
