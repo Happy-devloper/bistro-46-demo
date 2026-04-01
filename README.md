@@ -56,3 +56,13 @@ const data = {
     }
   ]
 };
+
+---
+
+## 📞 Interested in a Website for Your Restaurant?
+
+I build custom, affordable websites for small businesses – especially restaurants.  
+If you like this demo and want a site for your own restaurant, **contact me**:
+
+- Email: your-happydevlopment@gmail.com  
+- GitHub: [Happy-devloper](https://github.com/Happy-devloper)  
