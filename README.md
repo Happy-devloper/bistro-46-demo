@@ -43,6 +43,8 @@ It is designed not just to look good — but to **drive real customer actions** 
 * Pre-filled message for quick ordering
 * Works instantly without backend
 
+![Hero](https://github.com/user-attachments/assets/f0cd7f66-79fb-4a56-a8df-fad03ee3ba0e)
+
 ---
 
 ### 🍔 Dynamic Menu System
@@ -56,6 +58,8 @@ It is designed not just to look good — but to **drive real customer actions** 
   * Pricing
 * Lazy-loaded images for performance
 
+![menu](https://github.com/user-attachments/assets/22a13e4e-007b-4a2d-96b5-5f021ec81abc)
+
 ---
 
 ### ⭐ Customer Reviews Section
@@ -63,7 +67,6 @@ It is designed not just to look good — but to **drive real customer actions** 
 * Dynamically rendered reviews
 * Star rating system (★ / ☆)
 * Easy to update
-
 ---
 
 ### 📍 Location & Contact System
@@ -72,6 +75,7 @@ It is designed not just to look good — but to **drive real customer actions** 
 * Address + working hours display
 * Clean contact layout
 
+![contact](https://github.com/user-attachments/assets/580c1317-944d-4ec2-b724-4ac58cd4fb25)
 ---
 
 ### 📧 Contact Form (Demo)
@@ -79,7 +83,10 @@ It is designed not just to look good — but to **drive real customer actions** 
 * Accessible form with labels
 * Inline success message (no alerts)
 * Keyboard-friendly inputs
-* Note: Form is frontend-only (no backend storage)
+* Note: Form is frontend-only (no backend storage) 
+
+
+![contact form](https://github.com/user-attachments/assets/08fbc3a3-4a0f-429b-b315-58e81799152c)
 
 ---
 
