@@ -43,7 +43,11 @@ It is designed not just to look good — but to **drive real customer actions** 
 * Pre-filled message for quick ordering
 * Works instantly without backend
 
-![Hero](https://github.com/user-attachments/assets/f0cd7f66-79fb-4a56-a8df-fad03ee3ba0e)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f0cd7f66-79fb-4a56-a8df-fad03ee3ba0e" alt="Hero Section" width="100%" style="max-width: 800px;" />
+  <br>
+  <em>Hero Section with Call-to-Action Buttons</em>
+</p>
 
 ---
 
@@ -52,13 +56,16 @@ It is designed not just to look good — but to **drive real customer actions** 
 * Menu rendered using JavaScript
 * Easily editable via `script.js`
 * Includes:
-
   * Images
   * Descriptions
   * Pricing
 * Lazy-loaded images for performance
 
-![menu](https://github.com/user-attachments/assets/22a13e4e-007b-4a2d-96b5-5f021ec81abc)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/22a13e4e-007b-4a2d-96b5-5f021ec81abc" alt="Menu Section" width="100%" style="max-width: 800px;" />
+  <br>
+  <em>Dynamic Menu Rendering</em>
+</p>
 
 ---
 
@@ -67,6 +74,7 @@ It is designed not just to look good — but to **drive real customer actions** 
 * Dynamically rendered reviews
 * Star rating system (★ / ☆)
 * Easy to update
+
 ---
 
 ### 📍 Location & Contact System
@@ -75,7 +83,12 @@ It is designed not just to look good — but to **drive real customer actions** 
 * Address + working hours display
 * Clean contact layout
 
-![contact](https://github.com/user-attachments/assets/580c1317-944d-4ec2-b724-4ac58cd4fb25)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/580c1317-944d-4ec2-b724-4ac58cd4fb25" alt="Contact Section" width="100%" style="max-width: 800px;" />
+  <br>
+  <em>Contact Section with Map</em>
+</p>
+
 ---
 
 ### 📧 Contact Form (Demo)
@@ -83,10 +96,13 @@ It is designed not just to look good — but to **drive real customer actions** 
 * Accessible form with labels
 * Inline success message (no alerts)
 * Keyboard-friendly inputs
-* Note: Form is frontend-only (no backend storage) 
+* Note: Form is frontend-only (no backend storage)
 
-
-![contact form](https://github.com/user-attachments/assets/08fbc3a3-4a0f-429b-b315-58e81799152c)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/08fbc3a3-4a0f-429b-b315-58e81799152c" alt="Contact Form" width="100%" style="max-width: 800px;" />
+  <br>
+  <em>Accessible Contact Form</em>
+</p>
 
 ---
 
@@ -114,109 +130,3 @@ All website content is controlled via a single object in:
 
 ```bash
 script.js
-```
-
-Update this:
-
-```js
-const data = {
-  name: "Restaurant Name",
-  phone: "+1234567890",
-  whatsapp: "1234567890",
-  address: "Your Address",
-  map: "Google Maps Embed URL",
-
-  menu: [...],
-  reviews: [...]
-};
-```
-
-👉 No backend required
-👉 No complex setup
-
----
-
-## 📸 Sections Included
-
-* Hero (with CTA buttons)
-* Menu (dynamic grid layout)
-* Reviews
-* Contact + Map
-* Contact Form
-* Sticky Call Button
-* Footer
-
----
-
-## 🌐 Live Demo
-
-👉 https://bistro-46.netlify.app/
-
----
-
-## ⚙️ Getting Started
-
-```bash
-git clone https://github.com/Happy-devloper/bistro-46-demo.git
-cd bistro-46-demo
-open index.html
-```
-
----
-
-## 🚀 Deployment
-
-You can deploy easily using:
-
-* Netlify
-* Vercel
-* GitHub Pages
-
-No build step required.
-
----
-
-## 🎯 Use Cases
-
-* Restaurant websites
-* Café landing pages
-* Cloud kitchens
-* Freelance client projects
-* Portfolio projects
-
----
-
-## ⚠️ Limitations
-
-* No backend (form is demo only)
-* No online payment system
-* No admin dashboard
-
----
-
-## 🛣️ Roadmap
-
-* [ ] Online ordering system
-* [ ] Payment integration
-* [ ] CMS support
-* [ ] Multi-language support
-* [ ] SEO optimization
-
----
-
-## 🤝 Contributing
-
-Pull requests and ideas are welcome.
-
----
-
-## 📄 License
-
-MIT License
-
----
-
-## 💡 Final Thought
-
-> This isn’t just a template —
-> it’s a simple system to help restaurants turn visitors into customers.
