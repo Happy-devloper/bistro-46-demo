@@ -10,8 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
   <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
+  <!-- Favicon (emoji-based, works everywhere) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
 </head>
 <body>
+
+<!-- Skip to content link for accessibility -->
+<a href="#main" class="skip-link">Skip to main content</a>
 
 <header>
   <div class="container">
@@ -29,7 +34,7 @@
   </div>
 </header>
 
-<main>
+<main id="main">
   <section id="home" class="hero">
     <div class="hero-content">
       <h1>Welcome to Bistro 46</h1>
@@ -37,6 +42,7 @@
       <div class="hero-buttons">
         <a href="#menu" class="btn">Explore Menu</a>
         <a id="callBtn" class="btn secondary">📞 Call Now</a>
+        <a id="whatsappBtn" class="btn secondary" target="_blank">🍔 Order Online (WhatsApp)</a>
       </div>
     </div>
   </section>
@@ -48,11 +54,18 @@
     </div>
   </section>
 
+  <section id="reviews">
+    <div class="container">
+      <h2 class="section-title">Customer Reviews</h2>
+      <div id="reviewsContainer" class="reviews-grid"></div>
+    </div>
+  </section>
+
   <section id="contact">
     <div class="container">
       <h2 class="section-title">Visit Us</h2>
       <div class="contact-grid">
-        <!-- Left card: location, phone, hours -->
+        <!-- Left card: location, phone, hours, map -->
         <div class="info-card" aria-labelledby="contact-info-heading">
           <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
           <h3 id="contact-info-heading">Location</h3>
@@ -70,9 +83,13 @@
             <li><span>Fri - Sat</span><span>5:00 PM – 2:00 AM</span></li>
             <li><span>Sun</span><span>Closed</span></li>
           </ul>
+
+          <i class="fas fa-map" style="margin-top: 1rem;" aria-hidden="true"></i>
+          <h3>Find us on Google Maps</h3>
+          <iframe id="map" class="map-iframe" allowfullscreen loading="lazy"></iframe>
         </div>
 
-        <!-- Right card: accessible form -->
+        <!-- Right card: accessible form + WhatsApp order -->
         <div class="info-card">
           <i class="fas fa-envelope" aria-hidden="true"></i>
           <h3>Send a Message</h3>
@@ -90,8 +107,12 @@
               <textarea id="message" name="message" rows="4" required></textarea>
             </div>
             <button type="submit" class="btn">Send Message</button>
+            <div id="formStatus" class="form-status"></div>
             <p class="form-note">For reservations, call us or use this form. (Demo – messages are not stored.)</p>
           </form>
+          <div style="margin-top: 1.5rem; text-align: center;">
+            <a id="whatsappContactBtn" class="btn secondary" target="_blank">🍔 Order Online via WhatsApp</a>
+          </div>
         </div>
       </div>
     </div>
