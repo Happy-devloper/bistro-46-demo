@@ -2,8 +2,9 @@
 const data = {
   name: "Bistro 46",
   phone: "+16465900612",
+  whatsapp: "16465900612", // without + for WhatsApp API
   address: "46 Market Street, New York, NY 10002",
-  map: "https://www.google.com/maps/embed?pb=...", // Replace with actual embed URL
+  map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.70512937933058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3166c2e2c3%3A0xb2f5b6b9b9b9b9b9!2s46%20Market%20St%2C%20New%20York%2C%20NY%2010002!5e0!3m2!1sen!2sus!4v1610000000000!5m2!1sen!2sus",
   menu: [
     {
       name: "Grilled Octopus",
@@ -29,6 +30,11 @@ const data = {
       img: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       desc: "Tomatoes, cucumber, red onion, feta, olives, oregano, extra virgin olive oil."
     }
+  ],
+  reviews: [
+    { name: "John D.", text: "Amazing food and atmosphere! The octopus was incredible.", rating: 5 },
+    { name: "Maria S.", text: "Best Mediterranean in NYC. Great service and cozy vibe.", rating: 5 },
+    { name: "Alex P.", text: "Loved the lamb chops. Will definitely come back!", rating: 4 }
   ]
 };
 
@@ -37,7 +43,7 @@ const data = {
 // Basic info
 document.title = `${data.name} | Mediterranean Cuisine in NYC`;
 const logoDiv = document.querySelector(".logo");
-if (logoDiv) logoDiv.innerHTML = `${data.name}`; // keeps span optional
+if (logoDiv) logoDiv.innerHTML = data.name;
 
 // Hero title
 const heroTitle = document.querySelector(".hero h1");
@@ -53,13 +59,24 @@ if (phoneLink) {
   phoneLink.href = `tel:${data.phone}`;
 }
 
-// Call buttons
+// Call buttons (hero, sticky)
 const callBtn = document.getElementById("callBtn");
 if (callBtn) callBtn.href = `tel:${data.phone}`;
 const stickyCall = document.getElementById("stickyCall");
 if (stickyCall) stickyCall.href = `tel:${data.phone}`;
 
-// Menu rendering
+// WhatsApp buttons
+const whatsappUrl = `https://wa.me/${data.whatsapp}?text=Hello%2C%20I%27d%20like%20to%20order%20online.`;
+const whatsappBtn = document.getElementById("whatsappBtn");
+if (whatsappBtn) whatsappBtn.href = whatsappUrl;
+const whatsappContactBtn = document.getElementById("whatsappContactBtn");
+if (whatsappContactBtn) whatsappContactBtn.href = whatsappUrl;
+
+// Map
+const mapIframe = document.getElementById("map");
+if (mapIframe && data.map) mapIframe.src = data.map;
+
+// Menu rendering with lazy loading
 const menuContainer = document.getElementById("menuItems");
 if (menuContainer) {
   menuContainer.innerHTML = "";
@@ -67,7 +84,7 @@ if (menuContainer) {
     const menuItem = document.createElement("div");
     menuItem.className = "menu-item";
     menuItem.innerHTML = `
-      <img src="${item.img}" alt="${item.name}">
+      <img src="${item.img}" alt="${item.name}" loading="lazy">
       <div class="menu-item-content">
         <h3>${item.name}</h3>
         <p>${item.desc || ""}</p>
@@ -78,18 +95,37 @@ if (menuContainer) {
   });
 }
 
-// Map (if you add an iframe later, you can set its src here)
-// Example: if you have <iframe id="map"> in your HTML
-const mapIframe = document.getElementById("map");
-if (mapIframe && data.map) mapIframe.src = data.map;
+// Reviews rendering
+const reviewsContainer = document.getElementById("reviewsContainer");
+if (reviewsContainer && data.reviews) {
+  reviewsContainer.innerHTML = "";
+  data.reviews.forEach(review => {
+    const stars = "★".repeat(review.rating) + "☆".repeat(5 - review.rating);
+    const reviewCard = document.createElement("div");
+    reviewCard.className = "review-card";
+    reviewCard.innerHTML = `
+      <div class="review-stars">${stars}</div>
+      <div class="review-text">“${review.text}”</div>
+      <div class="review-name">- ${review.name}</div>
+    `;
+    reviewsContainer.appendChild(reviewCard);
+  });
+}
 
-// Contact form demo alert
+// Contact form with inline success message (no alert)
 const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("formStatus");
 if (contactForm) {
   contactForm.addEventListener("submit", function(e) {
     e.preventDefault();
-    alert("Thank you for reaching out! (Demo – your message would be sent to the restaurant.)");
+    // Simulate sending (demo)
+    formStatus.innerHTML = "✅ Thank you! Your message has been sent (demo).";
+    formStatus.className = "form-status success";
     contactForm.reset();
+    setTimeout(() => {
+      formStatus.innerHTML = "";
+      formStatus.className = "form-status";
+    }, 4000);
   });
 }
 
