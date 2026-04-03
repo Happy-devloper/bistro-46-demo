@@ -1,21 +1,98 @@
-MIT License
+# Bistro 46 License (Custom MIT-Based License)
 
 Copyright (c) 2026 Ravi Kumar
 
+---
+
+## 1. Permission
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+of this software and associated documentation files (the "Software"), to:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+* Use the Software for personal or commercial projects
+* Modify and customize the Software
+* Deploy the Software for clients or businesses
+* Distribute modified versions of the Software
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+---
+
+## 2. Conditions
+
+The above permissions are subject to the following conditions:
+
+### 2.1 Attribution
+
+You must give appropriate credit to the original author (Ravi Kumar) by including:
+
+* This license file
+* A visible acknowledgment in the project or documentation (e.g., "Based on Bistro 46 by Ravi Kumar")
+
+---
+
+### 2.2 No Resale as a Template
+
+You may NOT:
+
+* Sell, resell, or redistribute this Software **as a standalone template, boilerplate, or UI kit**
+* Upload it to template marketplaces, theme stores, or similar platforms
+* Repackage and distribute it with minimal or no modification
+
+---
+
+### 2.3 Allowed Commercial Use
+
+You ARE allowed to:
+
+* Use this Software to build websites for clients
+* Charge clients for development, customization, and deployment
+* Include it as part of a larger product or service
+
+---
+
+## 3. Modifications
+
+If you modify the Software:
+
+* You may distribute your modified version
+* But it must still follow all conditions in this license
+* Significant modifications are required for redistribution
+
+---
+
+## 4. No Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:
+
+* MERCHANTABILITY
+* FITNESS FOR A PARTICULAR PURPOSE
+* NON-INFRINGEMENT
+
+---
+
+## 5. Limitation of Liability
+
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM:
+
+* The use of the Software
+* Or any other dealings in the Software
+
+---
+
+## 6. Summary (Human-Readable)
+
+You are free to:
+✔ Use it
+✔ Modify it
+✔ Use it for client work
+
+You are NOT allowed to:
+✘ Sell it as your own template
+✘ Upload it to marketplaces
+✘ Redistribute it without meaningful changes
+
+---
+
+## 7. Author
+
+Ravi Kumar
+2026
