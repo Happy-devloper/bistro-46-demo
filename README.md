@@ -2,6 +2,8 @@
 
 ### A Modern, Conversion-Focused Restaurant Website Template
 
+**🔗 Live Demo:** [https://bistro-46.netlify.app/](https://bistro-46.netlify.app/)
+
 Bistro 46 is a **fast, responsive, and fully customizable restaurant website template** built using pure HTML, CSS, and JavaScript.
 
 It is designed not just to look good — but to **drive real customer actions** like calls, visits, and direct orders.
@@ -16,6 +18,7 @@ It is designed not just to look good — but to **drive real customer actions** 
 * 💬 WhatsApp integration for instant ordering
 * 🧠 Data-driven content (edit one file only)
 * ♿ Accessibility-focused design
+* 🌐 Live preview: [bistro-46.netlify.app](https://bistro-46.netlify.app/)
 
 ---
 
@@ -119,14 +122,3 @@ It is designed not just to look good — but to **drive real customer actions** 
 
 * Skip-to-content link
 * ARIA labels for better screen reader support
-* Focus-visible states for keyboard navigation
-* Semantic HTML structure
-
----
-
-## 🧠 How It Works
-
-All website content is controlled via a single object in:
-
-```bash
-script.js
